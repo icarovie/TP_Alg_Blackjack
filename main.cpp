@@ -17,9 +17,8 @@ int main(){
     joao.idade = 20;
     joao.comandados
 
-    
-
-
-
     return 0;
 }
+
+// REFS
+

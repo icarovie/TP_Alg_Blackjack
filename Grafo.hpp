@@ -1,7 +1,15 @@
 #include <iostream>
-#include <vector>
+#include <list>
 
 class Grafo{
-    vector <Vertice> G;
+    public:
+        int tamanhoGrafo;
+        int numeroArestasTotal;
+        list <Vertice> *adjacencia;
+
+        // Adiciona Aresta no meu Grafo
+        void adicionarAresta(Vertice v1, Vertice v2);
+        
+
 }
 

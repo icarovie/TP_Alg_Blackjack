@@ -12,10 +12,8 @@ class Vertice{
     public:
     int id;
     int idade;
-    list <Vertice> comandados;
-    list <Vertice> comandantes;
-
-    void imprimeCommander();
+    //list <Vertice> *comandados;
+    //list <Vertice> *comandantes;
 };
 
 #endif
