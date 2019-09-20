@@ -7,9 +7,7 @@ class Grafo{
         int numeroArestasTotal;
         list <Vertice> *adjacencia;
 
-        // Adiciona Aresta no meu Grafo
-        void adicionarAresta(Vertice v1, Vertice v2);
-        
-
+        // Construtor
+        Grafo(int tamanhoGrafo, int numeroArestasTotal);
 }
 

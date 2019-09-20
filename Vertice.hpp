@@ -12,8 +12,11 @@ class Vertice{
     public:
     int id;
     int idade;
-    //list <Vertice> *comandados;
-    //list <Vertice> *comandantes;
+    list <Vertice> *comandados;
+    list <Vertice> *comandantes;
+    
+    // Adiciona Aresta no meu Grafo
+    void adicionarAresta(Vertice v1, Vertice v2);
 };
 
 #endif
