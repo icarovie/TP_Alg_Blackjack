@@ -10,17 +10,25 @@ int main(){
     int numeroPessoasEquipe;
     int relacoesDiretas;
     int numeroInstrucoes;
+    int idadeTemp;
 
-    Grafo grafo(numeroPessoasEquipe);
+    // Entrada de Numero de Pessoas, Relações diretas e numero de Instrucões
+    cin >> numeroPessoasEquipe;
+    cin >> relacoesDiretas;
+    cin >> numeroInstrucoes;
 
-    Vertice icaro;
-    icaro.id = 1;
-    icaro.idade = 22;
+    cout << numeroPessoasEquipe << relacoesDiretas << numeroInstrucoes;
 
-    Vertice joao;
-    joao.id = 2;
-    joao.idade = 20;
-    //joao.comandados
+    // Inicializo meu Grafo
+    Grafo grafo[numeroPessoasEquipe];
+    
+    // Atribuo as idades para cada um dos vertices do meu Grafo
+    for(int i = 0; i<5; i++){
+        cin >> idadeTemp;
+        grafo->adjacencia[i] = Vertice(i,idadeTemp);
+    }
+    
+    // Sintaxe chata de c++
 
     return 0;
 }

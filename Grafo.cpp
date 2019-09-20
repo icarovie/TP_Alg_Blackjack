@@ -1,6 +1,6 @@
 #include "Grafo.hpp"
 
-Grafo::Grafo(int numeroVertices, int numeroArestas){
+Grafo::grafo(int numeroVertices, int numeroArestas){
     this->numeroVertices = numeroVertices;
     this->numeroArestas = numeroArestas;
 

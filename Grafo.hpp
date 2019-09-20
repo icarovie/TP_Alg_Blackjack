@@ -1,8 +1,10 @@
 #ifndef Grafo_HPP
 #define Grafo_HPP
 
+// Classes
 #include "Vertice.hpp"
 
+// Bibliotecas Padrão
 #include <iostream>
 #include <list>
 #include <algorithm>
@@ -16,7 +18,7 @@ class Grafo{
         list<Vertice> *adjacencia;
 
         // Construtor
-        Grafo(int numeroVertices, int numeroArestas);
+        grafo(int numeroVertices, int numeroArestas);
 };
 
 #endif

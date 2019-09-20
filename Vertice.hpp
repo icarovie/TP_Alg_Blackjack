@@ -16,6 +16,9 @@ class Vertice{
     list <Vertice> *comandados;
     list <Vertice> *comandantes;
     
+    // Construtor
+    Vertice(int id, int idade);
+
     // Adiciona Aresta no meu Grafo
     void adicionarAresta(Vertice v1, Vertice v2);
 };
