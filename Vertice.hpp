@@ -1,6 +1,7 @@
 #ifndef Vertice_HPP
 #define Vertice_HPP
 
+// Bibliotecas Padrão
 #include <iostream>
 #include <vector>
 #include <list>

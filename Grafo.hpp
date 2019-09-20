@@ -1,13 +1,23 @@
+#ifndef Grafo_HPP
+#define Grafo_HPP
+
+#include "Vertice.hpp"
+
 #include <iostream>
 #include <list>
+#include <algorithm>
+
+using namespace std;
 
 class Grafo{
     public:
-        int tamanhoGrafo;
-        int numeroArestasTotal;
-        list <Vertice> *adjacencia;
+        int numeroVertices;
+        int numeroArestas;
+        list<Vertice> *adjacencia;
 
         // Construtor
-        Grafo(int tamanhoGrafo, int numeroArestasTotal);
-}
+        Grafo(int numeroVertices, int numeroArestas);
+};
+
+#endif
 
