@@ -1,11 +1,11 @@
 #include "Grafo.hpp"
 
-Grafo::grafo(int numeroVertices, int numeroArestas){
+Grafo::Grafo(int numeroVertices, int numeroArestas){
     this->numeroVertices = numeroVertices;
     this->numeroArestas = numeroArestas;
 
     // Declaro o numero de vertices na minha lista
-    adjacencia = new list<Vertice>[numeroVertices];
+    //adjacencia = new list<Vertice>[numeroVertices];
 }
 
 //Grafo::adicionarAresta(Vertice grafoOrigem, Vertice grafoDestino){

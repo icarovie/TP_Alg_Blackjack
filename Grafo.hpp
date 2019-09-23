@@ -18,7 +18,7 @@ class Grafo{
         list<Vertice> *adjacencia;
 
         // Construtor
-        grafo(int numeroVertices, int numeroArestas);
+        Grafo(int numeroVertices, int numeroArestas);
 };
 
 #endif
