@@ -24,7 +24,7 @@ int main(){
     //cout <<"Grafo | N Vertices: "<< grafo->numeroVertices <<"|   N Arestas: "<< grafo->numeroArestas <<endl;
 
     
-    //Atribuo as idades para cada um dos vertices do meu Grafo
+    // Adiciono os vertices no meu Grafo
     for(int i = 0; i < numeroPessoasEquipe; i++){
         int idadeTemp;
         cin >> idadeTemp;
@@ -32,10 +32,14 @@ int main(){
     }
 
     for(int i = 0; i < numeroInstrucoes;i++){
-        int origem;
-        int destino;
+        int origem, destino;
         cin >> origem;
         cin >> destino;
+
+        Vertice v1 = grafo->retornaVertice(origem);
+        Vertice v2 = grafo->retornaVertice(destino);
+
+        grafo->adicionarAresta(v1,v2);
     }
 
     grafo->imprimeGrafo();
