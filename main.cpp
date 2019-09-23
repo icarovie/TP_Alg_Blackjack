@@ -21,7 +21,7 @@ int main(){
 
     // Inicializo meu Grafo
     Grafo *grafo = new Grafo(numeroPessoasEquipe, relacoesDiretas);
-    cout <<"Grafo | N Vertices: "<< grafo->numeroVertices <<"|   N Arestas: "<< grafo->numeroArestas <<endl;
+    //cout <<"Grafo | N Vertices: "<< grafo->numeroVertices <<"|   N Arestas: "<< grafo->numeroArestas <<endl;
 
     
     //Atribuo as idades para cada um dos vertices do meu Grafo
@@ -29,6 +29,13 @@ int main(){
         int idadeTemp;
         cin >> idadeTemp;
         grafo->adicionarVertice(i,idadeTemp);
+    }
+
+    for(int i = 0; i < numeroInstrucoes;i++){
+        int origem;
+        int destino;
+        cin >> origem;
+        cin >> destino;
     }
 
     grafo->imprimeGrafo();

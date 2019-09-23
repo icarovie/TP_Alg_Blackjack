@@ -12,6 +12,10 @@ void Grafo::adicionarVertice(int id, int idade){
     this->adjacencia[id].push_back(Vertice(id,idade));
 }
 
+void Grafo::adicionarAresta(int origem, int destino){
+    this->adjacencia[origem].comandados.push_back(destino);
+}
+
 void Grafo::imprimeGrafo(){
     for(int i=0; i < this->numeroVertices; i++){
         cout << i+1 << "-->";

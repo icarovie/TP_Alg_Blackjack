@@ -4,7 +4,7 @@ Vertice::Vertice(int id, int idade){
     this->id = id;
     this->idade = idade;
 
-    //comandados = new list<Vertice>;
+    comandados = new list<Vertice>;
 }
 
 void Vertice::adicionarAresta(Vertice origem, Vertice destino){
