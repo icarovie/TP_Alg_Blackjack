@@ -22,15 +22,15 @@ int main(){
     Grafo *grafo = new Grafo(numeroPessoasEquipe, relacoesDiretas);
     cout <<"Grafo: "<< grafo->numeroArestas << grafo->numeroVertices<<endl;
 
-    Vertice *Icaro = new Vertice(1,22);
-    cout <<"Aresta"<< Icaro->id << Icaro->idade;
+    //Vertice *Icaro = new Vertice(1,22);
+    //cout <<"Aresta"<< Icaro->id << Icaro->idade;
     
-    // Atribuo as idades para cada um dos vertices do meu Grafo
-    /*for(int i = 0; i<5; i++){
+    //Atribuo as idades para cada um dos vertices do meu Grafo
+    for(int i = 0; i<numeroPessoasEquipe; i++){
         int idadeTemp;
         cin >> idadeTemp;
-        grafo->adjacencia[i] = Vertice(i,idadeTemp);
-    }*/
+        grafo->adicionarInfoVertice(i,idadeTemp);
+    }
     
     // Sintaxe chata de c++
 

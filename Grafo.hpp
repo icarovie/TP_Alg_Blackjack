@@ -19,6 +19,9 @@ class Grafo{
 
         // Construtor
         Grafo(int numeroVertices, int numeroArestas);
+
+        //Functions
+        void adicionarInfoVertice(int id, int idade);
 };
 
 #endif
