@@ -11,16 +11,16 @@ using namespace std;
 
 class Vertice{
     public:
-    int id;
-    int idade;
-    list <Vertice> *comandados;
-    list <Vertice> *comandantes;
-    
-    // Construtor
-    Vertice(int id, int idade);
+        int id;
+        int idade;
+        list <Vertice> *comandados;
+        list <Vertice> *comandantes;
+        
+        // Construtor
+        Vertice(int id, int idade);
 
-    // Adiciona Aresta no meu Grafo
-    void adicionarAresta(Vertice v1, Vertice v2);
+        // Adiciona Aresta no meu Grafo
+        void adicionarAresta(Vertice origem, Vertice destino);
 };
 
 #endif

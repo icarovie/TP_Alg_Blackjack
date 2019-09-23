@@ -21,7 +21,8 @@ class Grafo{
         Grafo(int numeroVertices, int numeroArestas);
 
         //Functions
-        void adicionarInfoVertice(int id, int idade);
+        void adicionarVertice(int id, int idade);
+        void imprimeGrafo();
 };
 
 #endif
