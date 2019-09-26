@@ -15,14 +15,16 @@ class Grafo{
     public:
         int numeroVertices;
         int numeroArestas;
-        list<Vertice> *adjacencia;
-
+        //Vertice *vertices;
+        vector <Vertice> vertices; 
         // Construtor
         Grafo(int numeroVertices, int numeroArestas);
 
         //Functions
-        void adicionarVertice(int id, int idade);
-        void adicionarAresta(Vertice origem,Vertice destino);
+        void imprimeTeste();
+        void preencheDadosVertice(int id,int idade);
+        void adicionarVerticeNoGrafo(int id, int idade);
+        //void adicionarAresta(Vertice origem,Vertice destino);
         Vertice retornaVertice(int id);
         void imprimeGrafo();
 };

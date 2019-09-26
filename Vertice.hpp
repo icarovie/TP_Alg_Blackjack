@@ -13,14 +13,14 @@ class Vertice{
     public:
         int id;
         int idade;
-        list <Vertice> *comandados;
-        list <Vertice> *comandantes;
+        list <Vertice> adjacencia;
+        //list <Vertice> *comandantes;
         
         // Construtor
         Vertice(int id, int idade);
 
         // Adiciona Aresta no meu Grafo
-        void adicionarAresta(Vertice origem, Vertice destino);
+        //void adicionarAresta(Vertice origem, Vertice destino);
 };
 
 #endif

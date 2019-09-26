@@ -23,26 +23,27 @@ int main(){
     Grafo *grafo = new Grafo(numeroPessoasEquipe, relacoesDiretas);
     //cout <<"Grafo | N Vertices: "<< grafo->numeroVertices <<"|   N Arestas: "<< grafo->numeroArestas <<endl;
 
-    
     // Adiciono os vertices no meu Grafo
     for(int i = 0; i < numeroPessoasEquipe; i++){
         int idadeTemp;
         cin >> idadeTemp;
-        grafo->adicionarVertice(i,idadeTemp);
+        grafo->adicionarVerticeNoGrafo(i,idadeTemp);
     }
 
-    for(int i = 0; i < numeroInstrucoes;i++){
+    /*for(int i = 0; i < numeroInstrucoes;i++){
         int origem, destino;
         cin >> origem;
         cin >> destino;
 
-        Vertice v1 = grafo->retornaVertice(origem);
-        Vertice v2 = grafo->retornaVertice(destino);
+        //Vertice v1 = grafo->retornaVertice(origem);
+       // Vertice v2 = grafo->retornaVertice(destino);
 
-        grafo->adicionarAresta(v1,v2);
-    }
+        //grafo->adicionarAresta(v1,v2);
+    }*/
 
     grafo->imprimeGrafo();
+    cout << "----------------" << endl;
+    grafo->imprimeTeste();
     
     // Sintaxe chata de c++
 
